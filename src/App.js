@@ -18,11 +18,11 @@ export default function App() {
   return (
     <div className="app-container">
       <div className="container">
-        <h1>Editor</h1>
+        <h1 className="title">Editor</h1>
         <textarea id="editor" onChange={changeHandler} value={text}></textarea>
       </div>
       <div className="container">
-        <h1>Previewer</h1>
+        <h1 className="title">Previewer</h1>
         <div id="preview" dangerouslySetInnerHTML={getMarkedDownText()} />
       </div>
     </div>
@@ -32,17 +32,16 @@ export default function App() {
 const placeholder = `# React Markdown Previewer
 
 ## What is Markdown?
-Markdown is a lightweight markup language with plain-text-formatting syntax, is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+Markdown is a lightweight markup language with plain-text-formatting syntax, is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor. Read more on [Wikipedia](https://en.wikipedia.org/wiki/Markdown).
 
 ## What can you do with Markdown?
 
 ### Emphasis:
-You can add emphasis by making text **bold** or _italic_.
-***Or you can combine both***.
+You can add emphasis by making text **bold**, _italic_ or ***combine both***.
 
 ### Blockquotes: 
 To create a blockquote, add a > in front of a paragraph.
-> A person who never made a mistake never tried anything new.
+> "A person who never made a mistake never tried anything new."
 
 ### List:
 You can organize items into ordered and unordered lists.
@@ -55,7 +54,6 @@ You can organize items into ordered and unordered lists.
 
 ### Code Blocks:
 Wrap single line code between 2 backticks to display some code: \`<div></div>\`
-
 \`\`\`
 // This way you can get multi-line code:
 function anotherExample(firstLine, lastLine) {
@@ -65,8 +63,7 @@ function anotherExample(firstLine, lastLine) {
 }
 \`\`\`
 ### Links:
-To create a link, enclose the link text in brackets (e.g., FreeCodeCamp]) and then follow it immediately with the URL in parentheses.
-
+To create a link, enclose the link text in brackets and then follow it immediately with the URL in parentheses.
 [FreeCodeCamp](https://www.freecodecamp.org/).
 
 ### Images:

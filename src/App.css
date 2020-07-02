@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet');
+
 .app-container {
   display: flex;
   width: 100%;
   height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -9,18 +12,23 @@
   flex-direction: column;
   flex-basis: 50%;
   height: 100%;
-  color: aliceblue;
-  background-color: black;
+  background-color: #2e2c2f;
+}
+
+.title {
+  color: white;
+  text-align: center;
 }
 
 #editor {
   height: 100%;
   resize: none;
+  border: 1px solid black;
 }
 
 #preview {
   height: 100%;
   overflow-y: auto;
-  color: black;
-  background-color: beige;
+  border: 1px solid black;
+  background-color: #eef5db;
 }
